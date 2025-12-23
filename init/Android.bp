@@ -11,8 +11,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.breeze.rc",
-    src: "etc/init.breeze.rc",
+    name: "init.flame.rc",
+    src: "etc/init.flame.rc",
     sub_dir: "init",
     vendor: true,
 }

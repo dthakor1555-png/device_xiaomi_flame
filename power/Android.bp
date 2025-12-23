@@ -1,5 +1,5 @@
 cc_library_static {
-    name: "libpowermode-ext-breeze",
+    name: "libpowermode-ext-flame",
     defaults: [
         "android.hardware.power-ndk_shared",
     ],

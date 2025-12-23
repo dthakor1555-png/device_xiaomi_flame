@@ -17,7 +17,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Call the proprietary setup.
-$(call inherit-product, vendor/xiaomi/breeze/breeze-vendor.mk)
+$(call inherit-product, vendor/xiaomi/flame/flame-vendor.mk)
 
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
@@ -216,7 +216,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh
 
 PRODUCT_PACKAGES += \
-    init.breeze.rc \
+    init.flame.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc \
@@ -259,16 +259,16 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlayBreeze \
-    FrameworkResOverlayBreeze \
-    Launcher3OverlayBreeze \
-    LineageSDKOverlayBreeze \
-    LineageSettingsOverlayBreeze \
-    LineageSettingsProviderOverlayBreeze \
-    SettingsOverlayBreeze \
-    SystemUIOverlayBreeze \
-    TelephonyOverlayBreeze \
-    WifiOverlayBreeze
+    CarrierConfigOverlayFlame \
+    FrameworkResOverlayFlame \
+    Launcher3OverlayFlame \
+    LineageSDKOverlayFlame \
+    LineageSettingsOverlayFlame \
+    LineageSettingsProviderOverlayFlame \
+    SettingsOverlayFlame \
+    SystemUIOverlayFlame \
+    TelephonyOverlayFlame \
+    WifiOverlayFlame
 
 PRODUCT_PACKAGES += \
     NcmTetheringOverlay
@@ -288,7 +288,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/power/config/parrot/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
-$(call soong_config_set,qtipower,mode_ext_lib,//$(LOCAL_PATH):libpowermode-ext-breeze)
+$(call soong_config_set,qtipower,mode_ext_lib,//$(LOCAL_PATH):libpowermode-ext-flame)
 
 # QMI
 PRODUCT_PACKAGES += \
