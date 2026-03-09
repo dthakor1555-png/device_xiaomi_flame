@@ -1,3 +1,4 @@
 allow vendor_sensors vendor_sysfs_displayfeature:dir search;
 allow vendor_sensors vendor_sysfs_battery_supply:dir search;
 allow vendor_sensors vendor_sysfs_battery_supply:file r_file_perms;
+allow vendor_sensors proc_tp_virtual_proximity:file { getattr open read write };

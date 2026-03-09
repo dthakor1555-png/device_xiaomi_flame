@@ -24,7 +24,7 @@ type vendor_mac_vendor_data_file, data_file_type, file_type, mlstrustedobject;
 type vendor_sysfs_palm, sysfs_type, fs_type;
 
 # Proximity
-type proc_proximity_ts, proc_type, fs_type;
+type proc_tp_virtual_proximity, fs_type, proc_type;
 
 # Thermal
 type sys_thermal_wifi_limit, fs_type, sysfs_type;

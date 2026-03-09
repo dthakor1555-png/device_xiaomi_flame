@@ -11,8 +11,8 @@ genfscon sysfs /devices/platform/soc/soc:silead_fp                              
 genfscon sysfs /devices/virtual/touch/touch_dev/palm_sensor  u:object_r:vendor_sysfs_palm:s0
 
 # Proximity
-genfscon proc /touchscreen/proximity_switch            u:object_r:proc_proximity_ts:s0
-genfscon proc /touchscreen/store_data_proximity        u:object_r:proc_proximity_ts:s0
+genfscon proc /tp_proximity_switch                     u:object_r:proc_tp_virtual_proximity:s0
+genfscon proc /tp_proximity_data                       u:object_r:proc_tp_virtual_proximity:s0
 
 # Suspend
 genfscon sysfs /devices/platform/soc/3000000.remoteproc-adsp/remoteproc/remoteproc2/3000000.remoteproc-adsp:glink-edge/3000000.remoteproc-adsp:glink-edge.adsp_apps.-1.-1/wakeup u:object_r:sysfs_wakeup:s0
